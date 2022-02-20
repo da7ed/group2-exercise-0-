@@ -4,9 +4,9 @@ console.log(msg); //print message in msg
 var peg = require("pegjs");
 const fs = require("fs");
 
-grammerFile = 'grammer.pegjs'
+grammarFile = 'grammar.pegjs'
 
-grammer = fs.readFileSync(grammarFile,'utf8')
+grammar = fs.readFileSync(grammarFile,'utf8')
 //console.log(grammar); //print grammar.pegjs code
 
 var parser = peg.generate(grammar)
